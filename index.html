@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adegan Global Monitor</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+  <header>
+    <h1>Adegan Global Monitor</h1>
+    <p class="owner">Owner: Olawale Abdul‑Ganiyu</p>
+  </header>
+
+  <nav>
+    <button id="btnGeo">Get My Location</button>
+    <button id="btnBluetooth">Scan Bluetooth (Permission)</button>
+    <label class="file">
+      Import Network Scan (JSON)
+      <input type="file" id="fileInput" accept=".json"/>
+    </label>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Map</h2>
+      <div id="map"></div>
+      <p class="note">Note: Browsers cannot reveal other people’s exact addresses, names, roofs, or hidden Wi‑Fi details. This app visualizes <b>your location</b> (with permission) and <b>data you import</b>.</p>
+    </section>
+
+    <section>
+      <h2>Detected / Imported Devices</h2>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Name</th><th>ID</th><th>Signal</th><th>Notes</th></tr>
+        </thead>
+        <tbody id="deviceTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>© Adegan Global Enterprise — Educational & Monitoring Dashboard</small>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

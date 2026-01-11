@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu}
+header{background:#0b3c5d;color:#fff;padding:1rem}
+header h1{margin:.2rem 0}
+.owner{opacity:.85}
+nav{display:flex;gap:.5rem;padding:.5rem;background:#f0f3f6;flex-wrap:wrap}
+nav button,.file{padding:.6rem .8rem;border:1px solid #c9d2da;background:#fff;border-radius:8px;cursor:pointer}
+.file input{display:none}
+main{display:grid;grid-template-columns:1fr;gap:1rem;padding:1rem}
+#map{height:380px;border-radius:12px;overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid #e5eaf0;padding:.5rem;text-align:left}
+.note{color:#555}
+footer{padding:1rem;text-align:center;color:#666}
